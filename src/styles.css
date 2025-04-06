@@ -1,0 +1,809 @@
+/* Import a science-themed font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif; /* Set Orbitron as the default font for all text */
+  background: linear-gradient(135deg, #0A1D37, #1B263B); /* Space-inspired gradient */
+  color: #E0E7FF; /* Light gray text for readability */
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.8rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5); /* Subtle glow effect */
+}
+
+/* Ensure all text elements use Orbitron */
+p, a, span, div, label, input, textarea, button {
+  font-family: 'Orbitron', sans-serif !important; /* Force Orbitron font on all text elements */
+}
+
+/* Buttons */
+button, .cta-button, .submit-button, .event-button {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #00D4FF, #39FF14); /* Electric blue to neon green */
+  border: none;
+  border-radius: 8px;
+  color: #0A1D37;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover, .cta-button:hover, .submit-button:hover, .event-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(57, 255, 20, 0.4);
+}
+
+/* Loading Screen */
+.loading-screen {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0A1D37, #1B263B);
+}
+
+.loading-title {
+  font-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  color: #00D4FF;
+  text-shadow: 0 0 15px rgba(0, 212, 255, 0.7);
+  animation: pulse 2s infinite;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(10, 29, 55, 0.95); /* Semi-transparent space blue */
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #E0E7FF;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00D4FF;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('/assets/hero.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 29, 55, 0.7); /* Darker overlay for readability */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-shadow: 0 0 15px rgba(0, 212, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  color: #E0E7FF;
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  text-decoration: none;
+}
+/* About Section */
+.about {
+  background: linear-gradient(135deg, #0A1D37, #1B263B); /* Match the website's background */
+  text-align: center;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  color: #E0E7FF;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Updated highlight icon styles */
+.highlight-icon {
+  width: 80px; /* Increased size for better visibility */
+  height: 80px;
+  background-size: contain; /* Ensures the full icon is visible without cropping */
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease; /* Keep the hover effect */
+  filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.5)); /* Replace solid background with a glow */
+}
+
+/* Hover effect */
+.highlight-icon:hover {
+  transform: scale(1.15); /* Slightly larger scale for emphasis */
+}
+
+/* Updated individual icon classes - removing the solid background */
+.physics-icon {
+  background-image: url('/path/to/physics-icon.png');
+}
+
+.interactive-icon {
+  background-image: url('/path/to/interactive-icon.png');
+}
+
+.math-icon {
+  background-image: url('/path/to/math-icon.png');
+}
+
+.team-icon {
+  background-image: url('/path/to/team-icon.png');
+}
+
+/* Adjust the highlight item container */
+.highlight-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Adjust text size to match larger icons */
+.highlight-item p {
+  font-size: 1.1rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+
+/* Events */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.event-card {
+  background: #2A3B5A; /* Dark gray with blue tint */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 212, 255, 0.3);
+}
+
+.event-image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.event-content {
+  padding: 20px;
+}
+
+.event-content h3 {
+  font-size: 1.6rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.event-description {
+  font-size: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  color: #E0E7FF;
+  margin-bottom: 10px;
+}
+
+.event-duration {
+  font-size: 0.9rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  color: #39FF14; /* Neon green */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.event-duration strong {
+  color: #FFFFFF; /* White for "Time Left:" */
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
+}
+
+.event-button {
+  width: 100%;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* Sponsors */
+.sponsor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.sponsor-grid div {
+  padding: 20px;
+  background: #2A3B5A;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 200px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+}
+
+
+/* Team Image Styles */
+.team-image-wrapper {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 15px;
+  overflow: hidden;
+  border-radius: 50%; /* Maintains circular shape */
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.5); /* Sci-fi glow effect */
+}
+
+.team-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills the circle without distortion */
+  object-position: center;
+  transition: transform 0.3s ease; /* Optional hover effect */
+}
+
+.team-card:hover .team-image {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Existing team styles (for reference) */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.team-card {
+  text-align: center;
+  background: #2A3B5A;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.team-card h3 {
+  font-size: 1.4rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+
+.team-card p {
+  font-size: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  color: #E0E7FF;
+}
+
+/* Footer */
+.footer {
+  background: #0A1D37;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #E0E7FF;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background: #E0E7FF;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 29, 55, 0.98);
+    flex-direction: column;
+    padding: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 15px 0;
+    font-size: 1.2rem;
+  }
+
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .event-card {
+    margin: 0;
+  }
+
+  .event-image-wrapper {
+    aspect-ratio: 4 / 3;
+  }
+
+  .event-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .event-description {
+    font-size: 0.9rem;
+  }
+
+  .event-duration {
+    font-size: 0.85rem;
+  }
+}
+
+/* Contact */
+.contact-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(42, 59, 90, 0.9); /* Semi-transparent dark gray with blue tint */
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3); /* Glowing border effect */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #00D4FF;
+  border-radius: 8px;
+  background: rgba(10, 29, 55, 0.5);
+  color: #E0E7FF;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #39FF14;
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  width: 100%;
+}
+
+/* Footer Updates */
+.footer {
+  background: #0A1D37;
+  padding: 50px 0 30px; /* Increased padding to accommodate new content */
+  text-align: center;
+  font-size: 0.9rem;
+  color: #E0E7FF;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  margin-bottom: 30px;
+}
+
+.newsletter-section h3 {
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #00D4FF;
+  border-radius: 8px;
+  background: rgba(10, 29, 55, 0.5);
+  color: #E0E7FF;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+}
+
+.newsletter-input:focus {
+  outline: none;
+  border-color: #39FF14;
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+}
+
+.newsletter-input::placeholder {
+  color: #A0AEC0;
+}
+
+/* Social Links */
+.social-links {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-link {
+  color: #E0E7FF;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #00D4FF;
+}
+
+/* Contact Info Section */
+.contact-info {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.contact-info p {
+  font-size: 0.95rem; /* Slightly larger than copyright for readability */
+  color: #E0E7FF;
+  margin-bottom: 10px;
+}
+
+.contact-info strong {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.3); /* Blue glow */
+  margin-right: 8px;
+}
+
+.contact-info a {
+  color: #00D4FF; /* Neon blue for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #39FF14; /* Neon green on hover */
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.5);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Copyright */
+.copyright {
+  margin-top: 20px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .newsletter-form {
+    flex-direction: column;
+    max-width: 300px;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+/* Mobile Adjustments for Contact Form */
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 20px;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 29, 55, 0.9); /* Semi-transparent dark blue */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #2A3B5A; /* Matches event card background */
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+}
+
+.modal-content h3 {
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Registration Form */
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #FFFFFF;
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
+}
+
+.registration-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #00D4FF;
+  border-radius: 8px;
+  background: rgba(10, 29, 55, 0.5);
+  color: #E0E7FF;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.registration-form input:focus {
+  outline: none;
+  border-color: #39FF14;
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+}
+
+.registration-form input::placeholder {
+  color: #A0AEC0;
+}
+
+/* Modal Buttons */
+.modal-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.cancel-button {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #FF416C, #FF4B2B); /* Red gradient for cancel */
+  border: none;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.cancel-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 65, 108, 0.4);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 20px;
+    width: 95%;
+  }
+
+  .modal-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .modal-buttons {
+    flex-direction: column;
+  }
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
