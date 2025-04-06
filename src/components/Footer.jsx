@@ -58,13 +58,32 @@ function Footer() {
         {/* Contact Info */}
         <div className="contact-info">
           <p className="location">
-            <strong>Location:</strong>Department of Physics and Astrophysics, North Campus, University of Delhi, University Enclave, Delhi, 110007
+            <strong>Location:</strong><br />
+            Department of Physics and Astrophysics,<br />
+            North Campus, University of Delhi,<br />
+            University Enclave,<br />
+            Delhi, 110007
+          </p>
+
+          <p className="owner-email">
+            <strong>Email:</strong> <a href="mailto:mukundhp11@physics.du.ac.in">mukundhp11@physics.du.ac.in</a>
           </p>
           <p className="owner-email">
             <strong>Email:</strong> <a href="mailto:Jitendhaka01@physics.du.ac.in">Jitendhaka01@physics.du.ac.in</a>
           </p>
+
+          <p className="owner-email">
+            <strong>Email:</strong> <a href="mailto:pushkarkumar70611@physics.du.ac.in">pushkarkumar70611@physics.du.ac.in</a>
+          </p>
+
+          <p className="phone">
+            <strong>Phone:</strong> <a href="tel:+918290250929">+91 82902 50929</a>
+          </p>
           <p className="phone">
             <strong>Phone:</strong> <a href="tel:+918955701507">+91 89557 01507</a>
+          </p>
+          <p className="phone">
+            <strong>Phone:</strong> <a href="tel:+919801962235">+91 98019 62235</a>
           </p>
         </div>
 

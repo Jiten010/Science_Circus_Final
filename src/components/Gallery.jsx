@@ -7,7 +7,7 @@ function Gallery() {
       <h2>Gallery</h2>
       <div className="gallery-grid">
         {galleryImages.map((image, index) => (
-          <img key={index} src={image.src} alt={`Gallery ${index + 1}`} className="gallery-img" />
+          <img key={index} src={image.image} alt={`Gallery ${index + 1}`} className="gallery-img" />
         ))}
       </div>
     </section>
