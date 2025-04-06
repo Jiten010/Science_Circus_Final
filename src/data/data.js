@@ -1,14 +1,14 @@
 export const events = [
     {
       title: "Anti-Quiz",
-      description: "A mind-bending quiz that challenges your physics knowledge in unexpected ways.",
+      description: "First of its kind! This is not your typical quiz — it's unpredictable, chaotic, and wildly fun.",
       startDate: "2025-04-12T13:30:00+05:30",
       image: "/assets/anti_quiz.png",
       actionText: "Register"
     },
     {
-      title: "Physics Squid Game",
-      description: "Survive physics-based challenges testing mechanics and energy.",
+      title: "The Physics Survival Lab",
+      description: "Run, think, survive — just like in Squid Game, but with Newton watching.",
       startDate: "2025-04-12T15:30:00+05:30",
       image: "/assets/squid.png",
       actionText: "Register"
@@ -36,7 +36,7 @@ export const events = [
     { image: "/assets/pic3.JPG" },
     { image: "/assets/pic9.JPG" },
     { image: "/assets/pic5.JPG" },
-    { image: "/assets/pic6.JPG" },
+    { image: "/assets/pic10.JPG" },
     { image: "/assets/pic7.JPG" },
     { image: "/assets/pic8.JPG" }
   ];
