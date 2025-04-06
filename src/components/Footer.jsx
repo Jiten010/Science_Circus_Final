@@ -28,7 +28,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="social-link"
           >
-            Instagram
+            <Instagram />
           </a>
         </div>
 
@@ -43,20 +43,15 @@ function Footer() {
           </address>
 
           <p className="font-semibold mb-1">📞 Contact Numbers:</p>
-          <ul className="space-y-1">
-          <li>
-          <a href="tel:+918290250929" className="hover:underline">+91 82902 50929</a>
-          </li>
-          </ul>
 
           <p className="phone">
-            <strong>Phone:</strong> <a href="tel:+918290250929">+91 82902 50929</a>
+            <strong>Mukund Pareek:</strong> <a href="tel:+918290250929">+91 82902 50929</a>
           </p>
           <p className="phone">
-            <strong>Phone:</strong> <a href="tel:+918955701507">+91 89557 01507</a>
+            <strong>Jiten Dhaka:</strong> <a href="tel:+918955701507">+91 89557 01507</a>
           </p>
           <p className="phone">
-            <strong>Phone:</strong> <a href="tel:+919801962235">+91 98019 62235</a>
+            <strong>Pushkar Kumar:</strong> <a href="tel:+919801962235">+91 98019 62235</a>
           </p>
         </div>
 
