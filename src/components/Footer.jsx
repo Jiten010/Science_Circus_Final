@@ -21,22 +21,7 @@ function Footer() {
 
         {/* Social Media Links */}
         <div className="social-links">
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-link"
-          >
-            Twitter
-          </a>
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-link"
-          >
-            Facebook
-          </a>
+          
           <a
             href="https://instagram.com"
             target="_blank"
@@ -44,14 +29,6 @@ function Footer() {
             className="social-link"
           >
             Instagram
-          </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-link"
-          >
-            LinkedIn
           </a>
         </div>
 
@@ -89,7 +66,7 @@ function Footer() {
 
         {/* Copyright */}
         <p className="copyright">
-          © {new Date().getFullYear()} Science Circus. All rights reserved.
+          © {new Date().getFullYear()} Department of Physics & Astrophysics. All rights reserved.
         </p>
       </div>
     </footer>
