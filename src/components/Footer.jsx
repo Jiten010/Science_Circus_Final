@@ -19,18 +19,6 @@ function Footer() {
           </form>
         </div>
 
-        {/* Social Media Links */}
-        <div className="social-links">
-          
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-link"
-          >
-            <Instagram />
-          </a>
-        </div>
 
         {/* Contact Info */}
         <div className="contact-info text-sm md:text-base leading-relaxed">
