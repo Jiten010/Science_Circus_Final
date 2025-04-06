@@ -1,7 +1,7 @@
 export const events = [
     {
-      title: "Q̅: The Anti Quiz",
-      description: "First of its kind! This is not your typical quiz — it's unpredictable, chaotic, and wildly fun.",
+      title: "Q̅ : The Anti Quiz",
+      description: "No points. No pressure. Just brains on speed. Flip the script. Question the quiz.",
       startDate: "2025-04-12T13:30:00+05:30",
       image: "/assets/anti_quiz.png",
       actionText: "Register"
