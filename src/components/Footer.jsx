@@ -42,17 +42,6 @@ function Footer() {
             Delhi, 110007
           </p>
 
-          <p className="owner-email">
-            <strong>Email:</strong> <a href="mailto:mukundhp11@physics.du.ac.in">mukundhp11@physics.du.ac.in</a>
-          </p>
-          <p className="owner-email">
-            <strong>Email:</strong> <a href="mailto:Jitendhaka01@physics.du.ac.in">Jitendhaka01@physics.du.ac.in</a>
-          </p>
-
-          <p className="owner-email">
-            <strong>Email:</strong> <a href="mailto:pushkarkumar70611@physics.du.ac.in">pushkarkumar70611@physics.du.ac.in</a>
-          </p>
-
           <p className="phone">
             <strong>Phone:</strong> <a href="tel:+918290250929">+91 82902 50929</a>
           </p>

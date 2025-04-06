@@ -14,19 +14,20 @@ export const events = [
       actionText: "Register"
     },
     {
-      title: "Science Stalls",
-      description: "Explore mathematical tricks and puzzles through interactive stalls.",
-      startDate: "2025-04-12T15:30:00+05:30",
-      image: "/assets/stalls.png",
-      //actionText: "Visit"
-    },
-    {
       title: "Treasure Hunt",
       description: "Solve physics-based puzzles to find hidden treasures.",
       startDate: "2025-04-12T15:30:00+05:30",
       image: "/assets/treasure_hunt.png",
       actionText: "Register"
+    },
+    {
+      title: "Science Stalls",
+      description: "Explore mathematical tricks and puzzles through interactive stalls.",
+      startDate: "2025-04-12T15:30:00+05:30",
+      image: "/assets/stalls.png",
+      actionText: "Register"
     }
+    
   ];
   
   export const galleryImages = [
@@ -48,7 +49,7 @@ export const events = [
   ];
   
 export const teamMembers = [
-  { name: "Mukund Pareek", role: "", image: "human3.jpg" },
-  { name: "Jiten Dhaka", role: "", image: "human1.jpg" },
-  { name: "Pushkar Kumar", role: "", image: "human2.jpg" },
+  { name: "Mukund Pareek", role: "mukundhp11@physics.du.ac.in", image: "human3.jpg" },
+  { name: "Jiten Dhaka", role: "jitendhaka01@physics.du.ac.in", image: "human1.jpg" },
+  { name: "Pushkar Kumar", role: "pushkarkumar70611@physics.du.ac.in", image: "human2.jpg" },
 ];

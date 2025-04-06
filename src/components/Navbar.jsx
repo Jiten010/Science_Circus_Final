@@ -10,7 +10,7 @@ function Navbar() {
       <div className="container navbar-content">
         <div className="logo">
           <a href="#home">
-            <img src="/assets/logo_final.png" alt="Science Circus Logo" />
+            <img src="/assets/logo_final.jpeg" alt="Science Circus Logo" />
           </a>
         </div>
         <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
