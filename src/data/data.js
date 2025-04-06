@@ -34,7 +34,7 @@ export const events = [
     { image: "/assets/pic1.JPG" },
     { image: "/assets/pic2.JPG" },
     { image: "/assets/pic3.JPG" },
-    { image: "/assets/pic4.JPG" },
+    { image: "/assets/pic9.JPG" },
     { image: "/assets/pic5.JPG" },
     { image: "/assets/pic6.JPG" },
     { image: "/assets/pic7.JPG" },
