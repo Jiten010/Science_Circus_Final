@@ -1,6 +1,6 @@
 export const events = [
     {
-      title: "Anti-Quiz",
+      title: "Q̅: The Anti Quiz",
       description: "First of its kind! This is not your typical quiz — it's unpredictable, chaotic, and wildly fun.",
       startDate: "2025-04-12T13:30:00+05:30",
       image: "/assets/anti_quiz.png",
