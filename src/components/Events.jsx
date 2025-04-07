@@ -144,9 +144,7 @@ function Events() {
               </p>
               <button
                 className="event-button"
-                onClick={() =>
-                  event.actionText === 'Register' ? handleOpenModal(event.title) : null
-                }
+                onClick={() => handleOpenModal(event.title)}
               >
                 {event.actionText}
               </button>
