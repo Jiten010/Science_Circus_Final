@@ -213,6 +213,7 @@ function Events() {
                   )}
                 </>
               ) : (
+
                 <div className="form-group">
                   <label htmlFor="name">Your Name</label>
                   <input
