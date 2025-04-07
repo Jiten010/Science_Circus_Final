@@ -1,28 +1,28 @@
 export const events = [
     {
       title: "Q̅ : The Anti Quiz",
-      description: "No points. No pressure. Just brains on speed. Flip the script. Question the quiz.",
+      description: "No points. No pressure. Just brains on speed.",
       startDate: "2025-04-12T13:30:00+05:30",
       image: "/assets/anti_quiz.png",
       actionText: "Register"
     },
     {
-      title: "The Physics Survival Lab",
-      description: "Run, think, survive — just like in Squid Game, but with Newton watching.",
+      title: "Ex-Isle : A Physics Survival Quest",
+      description: "Run, think, survive — just like in Squid Games, but with Newton watching.",
       startDate: "2025-04-12T15:30:00+05:30",
       image: "/assets/squid.png",
       actionText: "Register"
     },
     {
-      title: "Treasure Hunt",
-      description: "Solve physics-based puzzles to find hidden treasures.",
+      title: "The Eureka Trail",
+      description: "A Treasure Hunt of Scientific Secrets.",
       startDate: "2025-04-12T15:30:00+05:30",
       image: "/assets/treasure_hunt.png",
       actionText: "Register"
     },
     {
       title: "Science Stalls",
-      description: "Explore mathematical tricks and puzzles through interactive stalls.",
+      description: "Textbooks OUT, Game ON - Explore Science & Maths through fun games, tricks and puzzles.",
       startDate: "2025-04-12T15:30:00+05:30",
       image: "/assets/stalls.png",
       actionText: "Register"
