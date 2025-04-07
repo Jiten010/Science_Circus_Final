@@ -54,7 +54,7 @@ function Footer() {
             className="inline-flex items-center gap-2 text-pink-600 hover:text-pink-800 transition"
           >
             <FaInstagram size={20} />
-            @your_instagram_handle
+            @the.sciencecircus
           </a>
         </div>
 
