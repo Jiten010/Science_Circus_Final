@@ -1,7 +1,7 @@
 // src/components/Team.jsx
-import { teamMembers } from '../data/data';
+/*import { teamMembers } from '../data/data';
 
-/*function Team() {
+function Team() {
   return (
     <section id="team" className="container">
       <h2>Our Team</h2>
@@ -22,6 +22,6 @@ import { teamMembers } from '../data/data';
       </div>
     </section>
   );
-}*/
+}
 
-export default Team;
+export default Team;*/

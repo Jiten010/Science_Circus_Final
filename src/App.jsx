@@ -6,7 +6,6 @@ import Events from './components/Events';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import Sponsors from './components/Sponsors';
-import Team from './components/Team';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -34,7 +33,6 @@ function App() {
       <Events />
       <Gallery />
       <Sponsors />
-      <Team />
       <Contact />
       <Footer />
     </div>
