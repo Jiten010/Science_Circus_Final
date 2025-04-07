@@ -6,7 +6,7 @@ function Hero() {
           <h1>Science Circus</h1>
           <p>Explore the wonders of physics and mathematics through interactive events and challenges!</p>
           <a 
-            href="https://forms.gle/PXwaCxY9EnhCwAuXA" 
+            href="https://forms.gle/cxvV96UqGFLWbP499" 
             className="cta-button" 
             target="_blank" 
             rel="noopener noreferrer"
