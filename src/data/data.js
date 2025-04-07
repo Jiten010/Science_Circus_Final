@@ -25,7 +25,7 @@ export const events = [
       description: "Textbooks OUT, Game ON - Explore Science & Maths through fun games, tricks and puzzles.",
       startDate: "2025-04-12T15:30:00+05:30",
       image: "/assets/stalls.png",
-      actionText: "Register"
+      actionText: "Visit"
     }
     
   ];
