@@ -9,10 +9,13 @@ function Events() {
     name: '',
     email: '',
     phone: '',
+    teamName: '',
+    player1: '',
+    player2: '',
+    player3: '',
   });
-  const [countdowns, setCountdowns] = useState({}); // Store countdowns for each event
+  const [countdowns, setCountdowns] = useState({});
 
-  // Update countdowns every second
   useEffect(() => {
     const interval = setInterval(() => {
       const newCountdowns = {};
@@ -21,9 +24,8 @@ function Events() {
         newCountdowns[event.title] = timeLeft;
       });
       setCountdowns(newCountdowns);
-    }, 1000); // Update every second
-
-    return () => clearInterval(interval); // Cleanup on unmount
+    }, 1000);
+    return () => clearInterval(interval);
   }, []);
 
   const calculateTimeLeft = (startDate) => {
@@ -31,10 +33,7 @@ function Events() {
     const start = new Date(startDate);
     const difference = start - now;
 
-    if (difference <= 0) {
-      return "Event has started!";
-    }
-
+    if (difference <= 0) return "Event has started!";
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
@@ -51,7 +50,15 @@ function Events() {
   const handleCloseModal = () => {
     setIsModalOpen(false);
     setSelectedEvent(null);
-    setFormData({ name: '', email: '', phone: '' });
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      teamName: '',
+      player1: '',
+      player2: '',
+      player3: '',
+    });
   };
 
   const handleInputChange = (e) => {
@@ -61,28 +68,41 @@ function Events() {
 
   const handleRegister = async (e) => {
     e.preventDefault();
-
-    const { name, email, phone } = formData;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const eventName = selectedEvent;
 
-    if (!name) {
-      alert('Name is required to register.');
-      return;
+    // Validation
+    if (eventName === 'Quiz') {
+      if (!formData.teamName || !formData.player1 || !formData.player2 || !formData.email) {
+        alert('Please fill all required fields for Quiz.');
+        return;
+      }
+    } else if (eventName === 'Survival Quest') {
+      if (!formData.teamName || !formData.player1 || !formData.player2 || !formData.player3 || !formData.email) {
+        alert('Please fill all required fields for Survival Quest.');
+        return;
+      }
+    } else {
+      if (!formData.name || !formData.email) {
+        alert('Name and email are required.');
+        return;
+      }
     }
-    if (!email) {
-      alert('Email is required to register.');
-      return;
-    }
-    if (!emailRegex.test(email)) {
+
+    if (!emailRegex.test(formData.email)) {
       alert('Please enter a valid email address.');
       return;
     }
 
     const registrationData = {
-      event_id: selectedEvent,
-      name,
-      email,
-      phone: phone || null,
+      event_id: eventName,
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone || null,
+      teamName: formData.teamName,
+      player1: formData.player1,
+      player2: formData.player2,
+      player3: formData.player3,
     };
 
     try {
@@ -93,7 +113,6 @@ function Events() {
       });
 
       const data = await response.json();
-
       if (response.ok) {
         alert(data.message);
         handleCloseModal();
@@ -118,7 +137,8 @@ function Events() {
               <h3>{event.title}</h3>
               <p className="event-description">{event.description}</p>
               <p className="event-Timings">
-                <strong>Timings:</strong>{event.Timings}</p>
+                <strong>Timings:</strong> {event.Timings}
+              </p>
               <p className="event-duration">
                 <strong>Time Left:</strong> {countdowns[event.title] || 'Calculating...'}
               </p>
@@ -135,24 +155,79 @@ function Events() {
         ))}
       </div>
 
-      {/* Registration Modal */}
+      {/* Modal */}
       {isModalOpen && (
         <div className="modal-overlay">
           <div className="modal-content">
             <h3>Register for {selectedEvent}</h3>
             <form className="registration-form" onSubmit={handleRegister}>
-              <div className="form-group">
-                <label htmlFor="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  placeholder="Enter your name"
-                  required
-                />
-              </div>
+              {/* Conditional form fields based on selectedEvent */}
+              {selectedEvent === 'Quiz' || selectedEvent === 'Survival Quest' ? (
+                <>
+                  <div className="form-group">
+                    <label htmlFor="teamName">Team Name</label>
+                    <input
+                      type="text"
+                      id="teamName"
+                      name="teamName"
+                      value={formData.teamName}
+                      onChange={handleInputChange}
+                      placeholder="Enter team name"
+                      required
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="player1">Player 1 Name</label>
+                    <input
+                      type="text"
+                      id="player1"
+                      name="player1"
+                      value={formData.player1}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="player2">Player 2 Name</label>
+                    <input
+                      type="text"
+                      id="player2"
+                      name="player2"
+                      value={formData.player2}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </div>
+                  {selectedEvent === 'Survival Quest' && (
+                    <div className="form-group">
+                      <label htmlFor="player3">Player 3 Name</label>
+                      <input
+                        type="text"
+                        id="player3"
+                        name="player3"
+                        value={formData.player3}
+                        onChange={handleInputChange}
+                        required
+                      />
+                    </div>
+                  )}
+                </>
+              ) : (
+                <div className="form-group">
+                  <label htmlFor="name">Your Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+              )}
+
+              {/* Common fields */}
               <div className="form-group">
                 <label htmlFor="email">Email</label>
                 <input
@@ -161,7 +236,6 @@ function Events() {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  placeholder="Enter your email"
                   required
                 />
               </div>
@@ -173,20 +247,11 @@ function Events() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  placeholder="Enter your phone number"
                 />
               </div>
               <div className="modal-buttons">
-                <button type="submit" className="submit-button">
-                  Register
-                </button>
-                <button
-                  type="button"
-                  className="cancel-button"
-                  onClick={handleCloseModal}
-                >
-                  Cancel
-                </button>
+                <button type="submit" className="submit-button">Register</button>
+                <button type="button" className="cancel-button" onClick={handleCloseModal}>Cancel</button>
               </div>
             </form>
           </div>
