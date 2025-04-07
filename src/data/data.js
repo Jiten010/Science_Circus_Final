@@ -2,7 +2,7 @@ export const events = [
     {
       title: "Q̅ : The Anti Quiz",
       description: "No points. No pressure. Just brains on speed.",
-      Timings: "01:30 PM - 03:30 PM",
+      Timings: "01:30 PM - 03:30 PM || 12 April",
       startDate: "2025-04-12T13:30:00+05:30",
       image: "/assets/anti_quiz.png",
       actionText: "Register"

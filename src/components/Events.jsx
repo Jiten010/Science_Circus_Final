@@ -117,7 +117,8 @@ function Events() {
             <div className="event-content">
               <h3>{event.title}</h3>
               <p className="event-description">{event.description}</p>
-              <p className="event-Timings">{event.Timings}</p>
+              <p className="event-Timings">
+                <strong>Timings:</strong>{event.Timings}</p>
               <p className="event-duration">
                 <strong>Time Left:</strong> {countdowns[event.title] || 'Calculating...'}
               </p>
