@@ -48,7 +48,7 @@ function Footer() {
         <div className="social-links mt-4">
           <p className="font-semibold mb-1">🔗 Follow Us:</p>
           <a
-            href="https://instagram.com/your_instagram_handle"
+            href="https://www.instagram.com/the.sciencecircus?igsh=OGZjYXc0cHZyYm5m&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-pink-600 hover:text-pink-800 transition"
