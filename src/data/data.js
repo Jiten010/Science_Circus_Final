@@ -2,7 +2,7 @@ export const events = [
     {
       title: "Q̅ : The Anti Quiz",
       description: "No points. No pressure. Just brains on speed.",
-      Timings: "01:30 PM - 03:30 PM || 12 April",
+      Timings: " 1:30 - 3:00 PM || 12 April",
       startDate: "2025-04-12T13:30:00+05:30",
       image: "/assets/anti_quiz.png",
       actionText: "Register"
@@ -10,6 +10,7 @@ export const events = [
     {
       title: "Ex-Isle : A Physics Survival Quest",
       description: "Run, think, survive — just like in Squid Games, but with Newton watching.",
+      Timings: " 03:30 PM Onwards || 12 April",
       startDate: "2025-04-12T15:30:00+05:30",
       image: "/assets/squid.png",
       actionText: "Register"
@@ -17,6 +18,7 @@ export const events = [
     {
       title: "The Eureka Trail",
       description: "A Treasure Hunt of Scientific Secrets.",
+      Timings: " 03:30 PM Onwards || 12 April",
       startDate: "2025-04-12T15:30:00+05:30",
       image: "/assets/treasure_hunt.png",
       actionText: "Register"
@@ -24,6 +26,7 @@ export const events = [
     {
       title: "Science Stalls",
       description: "Textbooks OUT, Game ON - Explore Science & Maths through fun games, tricks and puzzles.",
+      Timings: " 03:30 PM Onwards || 12 April",
       startDate: "2025-04-12T15:30:00+05:30",
       image: "/assets/stalls.png",
       actionText: "Visit"
