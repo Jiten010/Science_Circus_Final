@@ -1,4 +1,5 @@
 // src/components/Footer.jsx
+import { FaInstagram } from 'react-icons/fa';
 function Footer() {
   return (
     <footer className="footer">
@@ -41,6 +42,20 @@ function Footer() {
           <p className="phone">
             <strong>Pushkar Kumar:</strong> <a href="tel:+919801962235">+91 98019 62235</a>
           </p>
+        </div>
+
+        {/* Social Links */}
+        <div className="social-links mt-4">
+          <p className="font-semibold mb-1">🔗 Follow Us:</p>
+          <a
+            href="https://instagram.com/your_instagram_handle"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-pink-600 hover:text-pink-800 transition"
+          >
+            <FaInstagram size={20} />
+            @your_instagram_handle
+          </a>
         </div>
 
         {/* Copyright */}
