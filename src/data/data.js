@@ -32,7 +32,7 @@ export const events = [
       Timings: " 03:30 PM Onwards || 12 April",
       startDate: "2025-04-12T15:30:00+05:30",
       image: "/assets/stalls.png",
-      actionText: "Visit"
+      actionText: "Visit "
     }
     
   ];
