@@ -5,6 +5,7 @@ export const events = [
       Timings: " 1:30 - 3:00 PM || 12 April",
       startDate: "2025-04-12T13:30:00+05:30",
       image: "/assets/anti_quiz.png",
+      formlink: "https://form.jotform.com/250971403936056",
       actionText: "Register"
     },
     {
@@ -13,6 +14,7 @@ export const events = [
       Timings: " 03:30 PM Onwards || 12 April",
       startDate: "2025-04-12T15:30:00+05:30",
       image: "/assets/squid.png",
+      formlink: "https://form.jotform.com/250970932826060",
       actionText: "Register"
     },
     {
@@ -21,6 +23,7 @@ export const events = [
       Timings: " 03:30 PM Onwards || 12 April",
       startDate: "2025-04-12T15:30:00+05:30",
       image: "/assets/treasure_hunt.png",
+      formlink: "https://form.jotform.com/250971493643060",
       actionText: "Register"
     },
     {
