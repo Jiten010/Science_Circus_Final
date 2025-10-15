@@ -50,13 +50,13 @@ export const events = [
   
   export const sponsors = [
     { name: "Physics Society" },
-    /*{ name: "SpaceX" },
+    /*{ name: "SpaceX" },*/
     { name: "MathWorks" },
-    { name: "SciLabs" }*/
+    { name: "SciLabs" }
   ];
   
 export const teamMembers = [
-  { name: "Mukund Pareek", role: "mukundhp11@physics.du.ac.in", image: "human3.jpg" },
+  /*{ name: "Mukund Pareek", role: "mukundhp11@physics.du.ac.in", image: "human3.jpg" },*/
   { name: "Jiten Dhaka", role: "jitendhaka01@physics.du.ac.in", image: "human1.jpg" },
   { name: "Pushkar Kumar", role: "pushkarkumar70611@physics.du.ac.in", image: "human2.jpg" },
 ];
