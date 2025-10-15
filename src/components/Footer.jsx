@@ -32,10 +32,6 @@ function Footer() {
           </address>
 
           <p className="font-semibold mb-1">📞 Contact Numbers:</p>
-
-          <p className="phone">
-            <strong>Mukund Pareek:</strong> <a href="tel:+918290250929">+91 82902 50929</a>
-          </p>
           <p className="phone">
             <strong>Jiten Dhaka:</strong> <a href="tel:+918955701507">+91 89557 01507</a>
           </p>
