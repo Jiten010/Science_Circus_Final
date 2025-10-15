@@ -1,5 +1,5 @@
 // src/components/Team.jsx
-/*import { teamMembers } from '../data/data';
+import { teamMembers } from '../data/data';
 
 function Team() {
   return (
@@ -24,4 +24,4 @@ function Team() {
   );
 }
 
-export default Team;*/
+export default Team;
