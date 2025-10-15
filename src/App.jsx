@@ -8,6 +8,7 @@ import Gallery from './components/Gallery';
 import Sponsors from './components/Sponsors';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Team from './components/Team';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -33,6 +34,7 @@ function App() {
       <Events />
       <Gallery />
       <Sponsors />
+      <Team />
       <Contact />
       <Footer />
     </div>
